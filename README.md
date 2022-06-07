@@ -77,7 +77,7 @@ The sentiment analysis produce a result as follows:
 The label key indicates the resultant sentiment from the model. It can have three values: Positive, Negativeor Neutral. The score field will indicate the factor by which the model feel a particular piece of text is positive, negative or neutral. 
 ### Steps to run the project
 - Run: git clone https://github.com/yashshah15/news-sentiment-analysis.git
-- cd news-sentiment-analysis.git
+- cd news-sentiment-analysis
 - Run: pip install -r requirements.txt to install the required packages and dependencies
 - Execute the command: python sentiment-analysis.py
 - The resultant chart will be displayed in the browser on the address http://127.0.0.1:53695/ 
