@@ -1,7 +1,6 @@
 # Sentiment Analysis of News articles
 ## ISI MINDS GROUP SUMMER CHALLENGE
 
----------------------------
 
 This repository contains the code for sentiment analysis of news articles published on from https://www.aljazeera.com/where/mozambique/. The code will automatically scrape the 10 most recen news articles published on the website. The data is stored in a python list and then sent to the pre-trained model for sentiment analysis. The model will classify the sentiment for article as positive, negative or neutral. The scraped data is stored in a json file [data.json](https://github.com/yashshah15/news-sentiment-analysis/blob/main/data.json)
 
@@ -18,7 +17,7 @@ This repository contains the code for sentiment analysis of news articles publis
 
 All the required libraries have been mentioned in [requirements.txt](https://github.com/yashshah15/news-sentiment-analysis/blob/main/requirements.txt)
 ## Code Walkthrough
----
+
 ### Scraping Data
 For scraping data I have used requests module from python. For getting the data:
 - I have scraped the links to news articles first and stored them in a python list.
