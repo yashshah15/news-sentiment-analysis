@@ -16,6 +16,14 @@ This repository contains the code for sentiment analysis of news articles publis
 - json
 
 All the required libraries have been mentioned in [requirements.txt](https://github.com/yashshah15/news-sentiment-analysis/blob/main/requirements.txt)
+
+### Structure of data.json
+The data.json is a simple jsson consisting of a key "article_text" and its value is the array that stores text from all the articles. The structure is as follows :
+```sh
+{
+    "article_text": [article_1_text, article_2_text, ...]
+}
+```
 ## Code Walkthrough
 
 ### Scraping Data
@@ -23,6 +31,7 @@ For scraping data I have used requests module from python. For getting the data:
 - I have scraped the links to news articles first and stored them in a python list.
 - After that I visited each link to scrape the news article content.
 - I have used BeautifulSoup to parse the html content using attributes and class names
+- The data is pre-cleaned while scraping to only include text from news article and eliminate images and other irrelevant text 
 ### Getting links
 ```sh
 result = requests.get("https://www.aljazeera.com/where/mozambique/")
